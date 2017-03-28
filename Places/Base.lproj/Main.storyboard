@@ -48,6 +48,7 @@
                     <navigationItem key="navigationItem" title="Places" id="xv1-Cq-El4"/>
                     <connections>
                         <outlet property="mapView" destination="w4g-Pd-rDL" id="eqN-Sr-3wk"/>
+                        <outlet property="tableView" destination="Dga-GD-yTA" id="MEZ-tk-xhH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

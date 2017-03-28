@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import QuadratTouch
 
-class PlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class PlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var mapView:MKMapView?
     @IBOutlet var tableView:UITableView?
@@ -29,7 +29,6 @@ class PlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
         
         setupFoursquare()
         
-        
         locationManager = CLLocationManager()
         
         if(locationManager != nil) {
@@ -45,6 +44,11 @@ class PlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
             mapView!.delegate = self
         }
         
+        if(tableView != nil){
+            
+            tableView!.delegate = self
+            tableView!.dataSource = self
+        }
         
     }
     
@@ -108,6 +112,7 @@ class PlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
                 
                 self.hasFinishedQuery = true
                 self.updateDisplayedPlaces()
+                self.tableView?.reloadData()
             }
         }
         
@@ -176,6 +181,31 @@ class PlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
         }
         
         return view
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return places.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        var cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier")
+        
+        if cell == nil
+        {
+            cell = UITableViewCell(style:UITableViewCellStyle.subtitle, reuseIdentifier:"cellIdentifier")
+        }
+        
+        if indexPath.row < places.count
+        {
+            let row = places[indexPath.row]
+            
+            cell!.textLabel?.text = row["name"] as? String
+            cell!.detailTextLabel?.text = row["address"] as? String
+        }
+        
+        return cell!
     }
     
     
