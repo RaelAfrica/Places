@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6CC7461E8AE4D400F39B25 /* QuadratTouch.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F6CC7451E8AE4B900F39B25 /* QuadratTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FA70E581E8AC67B00F66341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA70E571E8AC67B00F66341 /* AppDelegate.swift */; };
 		1FA70E5A1E8AC67B00F66341 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA70E591E8AC67B00F66341 /* PlacesViewController.swift */; };
 		1FA70E5D1E8AC67B00F66341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA70E5B1E8AC67B00F66341 /* Main.storyboard */; };
 		1FA70E5F1E8AC67B00F66341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA70E5E1E8AC67B00F66341 /* Assets.xcassets */; };
 		1FA70E621E8AC67B00F66341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA70E601E8AC67B00F66341 /* LaunchScreen.storyboard */; };
-		1FA70E731E8ACB6100F66341 /* QuadratTouch.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FA70E711E8ACB4400F66341 /* QuadratTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FA70E761E8ACDD700F66341 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA70E751E8ACDD700F66341 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1FA70E6E1E8ACB4400F66341 /* PBXContainerItemProxy */ = {
+		1F6CC7421E8AE4B900F39B25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FA70E691E8ACB4400F66341 /* Quadrat.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 476B70891A0EBAE700AFAC33;
 			remoteInfo = Quadrat;
 		};
-		1FA70E701E8ACB4400F66341 /* PBXContainerItemProxy */ = {
+		1F6CC7441E8AE4B900F39B25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FA70E691E8ACB4400F66341 /* Quadrat.xcodeproj */;
 			proxyType = 2;
@@ -40,7 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				1FA70E731E8ACB6100F66341 /* QuadratTouch.framework in CopyFiles */,
+				1F6CC7461E8AE4D400F39B25 /* QuadratTouch.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +54,7 @@
 		1FA70E5E1E8AC67B00F66341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FA70E611E8AC67B00F66341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FA70E631E8AC67B00F66341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FA70E691E8ACB4400F66341 /* Quadrat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quadrat.xcodeproj; path = "das-quadrat/Source/Quadrat.xcodeproj"; sourceTree = "<group>"; };
+		1FA70E691E8ACB4400F66341 /* Quadrat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quadrat.xcodeproj; path = "../das-quadrat/Source/Quadrat.xcodeproj"; sourceTree = "<group>"; };
 		1FA70E751E8ACDD700F66341 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -70,10 +70,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F6CC73E1E8AE4B900F39B25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F6CC7431E8AE4B900F39B25 /* Quadrat.framework */,
+				1F6CC7451E8AE4B900F39B25 /* QuadratTouch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1FA70E4B1E8AC67B00F66341 = {
 			isa = PBXGroup;
 			children = (
-				1FA70E691E8ACB4400F66341 /* Quadrat.xcodeproj */,
 				1FA70E561E8AC67B00F66341 /* Places */,
 				1FA70E551E8AC67B00F66341 /* Products */,
 				1FA70E741E8ACDD700F66341 /* Frameworks */,
@@ -91,6 +99,7 @@
 		1FA70E561E8AC67B00F66341 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				1FA70E691E8ACB4400F66341 /* Quadrat.xcodeproj */,
 				1FA70E571E8AC67B00F66341 /* AppDelegate.swift */,
 				1FA70E591E8AC67B00F66341 /* PlacesViewController.swift */,
 				1FA70E5B1E8AC67B00F66341 /* Main.storyboard */,
@@ -99,15 +108,6 @@
 				1FA70E631E8AC67B00F66341 /* Info.plist */,
 			);
 			path = Places;
-			sourceTree = "<group>";
-		};
-		1FA70E6A1E8ACB4400F66341 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1FA70E6F1E8ACB4400F66341 /* Quadrat.framework */,
-				1FA70E711E8ACB4400F66341 /* QuadratTouch.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1FA70E741E8ACDD700F66341 /* Frameworks */ = {
@@ -169,7 +169,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1FA70E6A1E8ACB4400F66341 /* Products */;
+					ProductGroup = 1F6CC73E1E8AE4B900F39B25 /* Products */;
 					ProjectRef = 1FA70E691E8ACB4400F66341 /* Quadrat.xcodeproj */;
 				},
 			);
@@ -181,18 +181,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1FA70E6F1E8ACB4400F66341 /* Quadrat.framework */ = {
+		1F6CC7431E8AE4B900F39B25 /* Quadrat.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Quadrat.framework;
-			remoteRef = 1FA70E6E1E8ACB4400F66341 /* PBXContainerItemProxy */;
+			remoteRef = 1F6CC7421E8AE4B900F39B25 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1FA70E711E8ACB4400F66341 /* QuadratTouch.framework */ = {
+		1F6CC7451E8AE4B900F39B25 /* QuadratTouch.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = QuadratTouch.framework;
-			remoteRef = 1FA70E701E8ACB4400F66341 /* PBXContainerItemProxy */;
+			remoteRef = 1F6CC7441E8AE4B900F39B25 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -380,6 +380,7 @@
 				1FA70E681E8AC67B00F66341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
