@@ -209,6 +209,32 @@ class PlacesViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        if(mapView == nil)
+        {
+            return
+        }
+        
+        let row = places[indexPath.row]
+        
+        if let name = row["name"] as? String
+        {
+            for annotation:MKAnnotation in mapView!.annotations
+            {
+                if let title = annotation.title
+                {
+                    if(name == title)
+                    {
+                        mapView!.selectAnnotation(annotation, animated: true)
+                        mapView!.setCenter(annotation.coordinate, animated: true)
+                    }
+                }
+            }
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
