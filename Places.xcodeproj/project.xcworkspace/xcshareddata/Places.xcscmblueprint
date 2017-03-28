@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CCD92497C715D7052E35B254907A107535A1A2C1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CCD92497C715D7052E35B254907A107535A1A2C1" : 9223372036854775807,
+    "C333CCA42B76DAB308C436958D3D72C5B6ACE147" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA6CA123-A522-4F79-9AE2-95E096FDA2B7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CCD92497C715D7052E35B254907A107535A1A2C1" : "Places\/",
+    "C333CCA42B76DAB308C436958D3D72C5B6ACE147" : "Places\/das-quadrat\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Places",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Places.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Constantine-Fry\/das-quadrat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C333CCA42B76DAB308C436958D3D72C5B6ACE147"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RaelAfrica\/Places",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CCD92497C715D7052E35B254907A107535A1A2C1"
+    }
+  ]
+}
